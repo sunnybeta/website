@@ -1,15 +1,16 @@
 import '../styles/about.css';
 
-export default function About() {
+export default function About(){
 	return (
-		<main className='main'>
-			<section className='inner'>
-				Hi.
+		<section className='about-container'>
+			<p>
+				Hi
 				<br/>
-				My name is Sunny Beta.
+				My name is Sunny Béta.
 				<br/>
-				I am a Software Engineer looking to build quick, easy and scalable solutions to your tech problems.
-			</section>
-		</main>
-	);
-};
+				I am a <strong>Software Engineer</strong> looking to build solutions to your tech problems.
+			</p>
+			<img src='/website/coding.gif'/>
+		</section>
+	)
+}

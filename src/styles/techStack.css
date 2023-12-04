@@ -1,0 +1,23 @@
+.techstack-container{
+	width: 100%;
+	color: black;
+	background: #FDBA21;
+	height: 100vh;
+	font-weight: 700;
+	display: flex;
+}
+
+.filters{
+	margin-left: 40px;
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+}
+
+.tech-icons{
+	display: grid;
+	grid-gap: 250px;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: repeat(4,1fr);
+	margin: auto;
+}
