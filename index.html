@@ -1,12 +1,63 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sunny Beta</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/index.tsx"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Sunny Beta" />
+		<meta name="description" content="Portfolio" />
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+		<title>Sunny Beta | Portfolio</title>
+	</head>
+	<body>
+		<main>
+			<header>
+				<div class='header'>
+					<h2>SUNNY BÉTA</h2>
+					<nav>
+						<ul>
+							<li><a onClick="changeZIndex('about')" href='#about'>ABOUT</a></li>
+							<li><a onClick="changeZIndex('techstack')" href='#techstack'>TECHSTACK</a></li>
+							<li><a onClick="changeZIndex('portfolio')" href='#portfolio'>PORTFOLIO</a></li>
+							<li><a onClick="changeZIndex('experience')" href='#experience'>EXPERIENCE</a></li>
+							<li><a onClick="changeZIndex('contact')" href='#contact'>CONTACT</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class='animated'>
+					<div id="mario">
+						<img src="assets/mario.gif">
+					</div>
+					<div id="contra">
+						<img src="assets/contra.gif">
+					</div>
+					<div id="battlecity">
+						<img src="assets/battlecity.gif">
+					</div>
+				</div>
+			</header>
+			<section id='about'>
+				<p>
+					Hi
+					<br/>
+					My name is Sunny Béta.
+					<br/>
+					I am a <strong>Software Engineer</strong> looking to build solutions to your tech problems.
+				</p>
+				<img src='assets/coding.gif'/>
+			</section>
+			<section id='portfolio'>
+				PORTFOLIO
+			</section>
+			<section id='techstack'>
+				TECHSTACK
+			</section>
+			<section id='experience'>
+				EXPERIENCE
+			</section>
+			<section id='contact'>
+				CONTACT
+			</section>
+		</main>
+	</body>
 </html>
