@@ -1,0 +1,26 @@
+{{ define "posts" }}
+<!doctype html>
+<html lang='en'>
+{{ template "head" . }}
+
+<body>
+	{{ template "links" . }}
+	{{ template "header" . }}
+	<main id='blog'>
+		<h1>Blogs</h1>
+		<p>I write some programming stuff here.</p>
+		<ul>
+			<li>
+				<div class="post">
+					<span>Date</span>
+					<span>Title</span>
+					<span>Summary</span>
+				</div>
+			</li>
+		</ul>
+	</main>
+	{{ template "footer" . }}
+</body>
+
+</html>
+{{ end }}

@@ -1,0 +1,51 @@
+{{ define "pricing" }}
+<!doctype html>
+<html lang='en'>
+{{ template "head" . }}
+
+<body>
+	{{ template "links" . }}
+	{{ template "header" . }}
+	<main id='pricing'>
+		<h1>Services Pricing</h1>
+		<p>Choose a package that best suits your needs, or contact me for a custom-tailored offer.</p>
+		<section>
+			<ul>
+				<li>Backend Systems</li>
+				<li>Vibe Code Fixer</li>
+				<li>AI Agent Development</li>
+				<li>Testing</li>
+				<li>One-Page Website</li>
+				<li>Bssic Website</li>
+				<li>Professional Website</li>
+				<li>SASS Applications</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Additional Services</h2>
+			<div>
+				<ul>
+					<li>Hosting and Domain Setup</li>
+					<li>Website Maintennance</li>
+					<li>Hosting and Domain Setup</li>
+			</div>
+		</section>
+		<section>
+			<h2>Have Specific Requirements?</h2>
+			<p>
+				Didn't find what you were looking for? No worries! I'll be happy to create a custom offer for you.
+				COntact me and we'll find the best solution for your project.
+			</p>
+			<div class="btn">
+				<a href="contact.html">Request A Quote</a>
+			</div>
+		</section>
+		<section>
+			FAQ
+		</section>
+	</main>
+	{{ template "footer" . }}
+</body>
+
+</html>
+{{ end }}

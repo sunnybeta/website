@@ -1,0 +1,41 @@
+{{ define "contact" }}
+<!doctype html>
+<html lang='en'>
+{{ template "head" . }}
+
+<body>
+	{{ template "links" . }}
+	{{ template "header" . }}
+	<main>
+		<section id='contact'>
+			<h1>Contact</h1>
+			<p>
+				You can contact me via Email, Discord or Instagram. I usually respond within a day.
+			</p>
+			<ul>
+				<li>Email</li>
+				<li>Instagram</li>
+				<li>Email</li>
+				<li>LinkedIn</li>
+			</ul>
+		</section>
+		<section>
+			<h2>PGP Key</h2>
+			Download my public PGP key for encrypted communication using email.
+			<!-- downloadbale button ... appears on hover -->
+		</section>
+		<section>
+			<div class='message'>
+				Let's get in touch
+			</div>
+			<form id='form'>
+				<input type='text' placeholder='Name' spellcheck='false' />
+				<input type='email' placeholder='Email' spellcheck='false' />
+				<textarea type='text' placeholder='Message'></textarea>
+				<button type='submit'>Send Message</button>
+			</form>
+		</section>
+	</main>
+	{{ template "footer" . }}
+</body>
+{{ end }}

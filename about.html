@@ -1,0 +1,317 @@
+
+<!doctype html>
+<html lang="en">
+
+
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<meta name='author' content='Sunny Béta'>
+	<meta name='description' content='Developer & Freelancer Portfolio'>
+	<meta name='keywords'
+		content='Software, Aritifiial Intelligence, Gen, AI, Developer, Mahcine Learning, Deep Learning, BackEnd, FrontEnd'>
+	<title>Sunny Béta</title>
+	
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Sora:wght@100..800&display=swap');
+
+	:root {
+		 
+		--background: #0c0a0d;
+		--border: #868786;
+		--black: #f5f5f5;
+		--blue: #058cd7;
+		--red: #fd5a46;
+		--pink: #d75888;
+		--orange: #ffc567;
+		--purple: #552cb7;
+		--violet: #8664b9;
+		--green: #00995e;
+		--accent: #f00359;
+
+		 
+		--width: 780px;
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	body {
+		background-color: var(--background);
+		color: var(--black);
+		padding: 0rem 4rem;
+		font-family: "Sora", sans-serif;
+	}
+
+	#logo {
+		font-weight: bold;
+	}
+
+	#logo[aria-current="page"] {
+		color: var(--accent);
+	}
+
+	#links {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		padding: 1rem 0;
+		align-items: center;
+
+		&a svg:hover {
+			color: var(--blue);
+		}
+	}
+
+	#location {
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+		color: gray;
+	}
+
+	nav {
+		display: flex;
+		gap: 2rem;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		font-family: "Fira", sans-serif;
+		padding: 0 4rem;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+	}
+
+	header nav ul li a[aria-current="page"] {
+		color: var(--accent);
+		font-weight: bold;
+	}
+
+	hr {
+		margin: auto;
+		width: 750px;
+		color: #80808022;
+	}
+
+	footer {
+		text-align: center;
+		font-size: 75%;
+		padding: 2rem 0;
+	}
+
+	footer a {
+		color: var(--accent);
+		text-decoration: underline;
+	}
+
+	#home {
+		padding: 4rem 0;
+	}
+
+	#music {
+		border: 1px solid gray;
+		background-color: var(--blue);
+		width: min-content;
+		color: orange;
+		display: none;
+	}
+
+	#about {
+		padding: 2rem 1rem;
+		margin: 0 auto;
+		width: var(--width);
+	}
+
+	section {
+		padding: 2rem 1rem;
+		margin: 0 auto;
+		width: var(--width);
+	}
+
+	#me {
+		width: var(--width);
+		margin: 0 auto;
+		padding: 2rem;
+		border: 1px solid #80808033;
+		border-radius: 4px;
+	}
+
+	#tech ul {
+		padding: 1rem 0;
+		display: flex;
+		gap: 0.5rem;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	#tech ul li {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		border: 1px solid #80808022;
+		border-radius: 4px;
+		padding: 0.5rem;
+	}
+
+	#testimonials {
+		text-align: center;
+		border: 1px solid gray;
+	}
+
+	#testimonials ul {
+		padding: 4rem 0;
+	}
+
+	#testimonials ul li {
+		padding: 0 8rem;
+		font-size: 105%;
+		text-align: left;
+		font-weight: 200;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	#testimonials ul li div {
+		font-weight: normal;
+		text-align: right;
+	}
+
+	#testimonials ul li div .designation {
+		font-size: 80%;
+		color: #999999;
+	}
+
+	#projects {
+		display: none;
+	}
+
+	#experience {
+		display: none;
+	}
+
+	#latest-blogs {
+		display: none;
+	}
+
+	#about {
+		padding: 2rem 1rem;
+		margin: 0 auto;
+		width: var(--width);
+	}
+</style>
+
+</head>
+
+
+<body>
+	
+<div id="links">
+	<a href='https://linkedin.com/in/sunnybeta' target="_blank">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+			<path
+				d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1M8.339 18.337H5.667v-8.59h2.672zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096m11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
+			</path>
+		</svg>
+	</a>
+	<a href='https://github.com/sunnybeta' target="_blank">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+			<path fill-rule="evenodd"
+				d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.6 9.6 0 0 1 2.496-.336 9.6 9.6 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2"
+				clip-rule="evenodd"></path>
+		</svg>
+	</a>
+	<a href='mailto:sunnybeta@protonmail.com' target="_blank">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+			<path
+				d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 2v.51l-8 6.22-8-6.22V6zM4 18V9.04l7.39 5.74c.18.14.4.21.61.21s.43-.07.61-.21L20 9.03v8.96H4Z">
+			</path>
+		</svg>
+	</a>
+	<a href='https://instagram.com/sunnybeta' target="_blank">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+			<path
+				d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248m0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008m4.807-8.875a1.078 1.078 0 1 0 0 2.156 1.078 1.078 0 1 0 0-2.156">
+			</path>
+			<path
+				d="M20.533 6.111A4.6 4.6 0 0 0 17.9 3.479a6.6 6.6 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.6 6.6 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.6 6.6 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71s0 2.753.056 3.71c.015.748.156 1.486.419 2.187a4.6 4.6 0 0 0 2.634 2.632 6.6 6.6 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.6 6.6 0 0 0 2.186-.419 4.6 4.6 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.6 6.6 0 0 0-.421-2.217m-1.218 9.532a5 5 0 0 1-.311 1.688 3 3 0 0 1-1.712 1.711 5 5 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a5 5 0 0 1-1.669-.311 3 3 0 0 1-1.719-1.711 5.1 5.1 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654s0-2.686.053-3.655a5 5 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5 5 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a5 5 0 0 1 1.67.311 3 3 0 0 1 1.712 1.712 5.1 5.1 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655s0 2.698-.043 3.654z">
+			</path>
+		</svg>
+	</a>
+</div>
+
+	
+<header>
+	<div id='logo' aria-current="page">
+		<a href="index.html">Sunny Beta</a>
+	</div>
+	<nav>
+		<ul>
+			<li><a href='about.html'>About</a></li>
+			<li><a href='work.html'>Work</a></li>
+			<li><a href='projects.html'>Projects</a></li>
+			<li><a href='posts.html'>Posts</a></li>
+			<li><a href='pricing.html'>Pricing</a></li>
+			<li><a href='contact.html'>Contact</a></li>
+		</ul>
+	</nav>
+</header>
+
+	<main id='about'>
+		<h1>About Me</h1>
+		<p>
+			I have been engaged in professional Web Development for several years. I create Full-Stack websites with a
+			minimalist look and speed. I also focus on website accessibility, website optimization and SEO.
+
+			I like minimalism. I stand by the fact that the website should not be full of ads and trackers and
+			completely useless JavaScript. On the other hand, I understand that sometimes a complex website hard to do
+			without a lot of JavaScript. I also use React sometimes.
+
+			But I stand by the fact that it is possible to make a good website even without JavaScript. For example this
+			one. This site is completely JavaScript-free. (except for Cloudflare email protection, so you won’t see my
+			email without JS)
+		</p>
+		<section>
+			<h1>Experience</h1>
+		</section>
+		<section>
+			<h1>Story</h1>
+			<h2>...</h2>
+			<h2>...</h2>
+			<h2>...</h2>
+		</section>
+	</main>
+	
+<footer>
+	<p>
+		&copy; 2026 Sunny Beta | Created in the UAE<br />
+		Built with 🩵 using HTML and CSS.<br />
+		Look at some of my projects on <a href="https://github.com/sunnybeta" target="_blank">GitHub</a>.
+	</p>
+</footer>
+
+</body>
+
+</html>
