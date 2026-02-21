@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Sora:wght@100..800&display=swap');
+
+:root {
+	/* colors */
+	--background: #0c0a0d;
+	--border: #868786;
+	--black: #f5f5f5;
+	--blue: #058cd7;
+	--red: #fd5a46;
+	--pink: #d75888;
+	--orange: #ffc567;
+	--purple: #552cb7;
+	--violet: #8664b9;
+	--green: #00995e;
+	--accent: #f00359;
+
+	/* sizes */
+	--width: 780px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	background-color: var(--background);
+	color: var(--black);
+	padding: 0rem 4rem;
+	font-family: "Sora", sans-serif;
+}
+
+#logo {
+	text-align: center;
+	font-weight: bold;
+}
+
+
+#links {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	padding: 1rem 0;
+	align-items: center;
+
+	&a svg:hover {
+		color: var(--blue);
+	}
+}
+
+#location {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	color: gray;
+}
+
+nav {
+	display: flex;
+	gap: 2rem;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	font-family: "Fira", sans-serif;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: end;
+	gap: 1rem;
+}
+
+header nav ul li a[aria-current="page"] {
+	color: var(--accent);
+	font-weight: bold;
+}
+
+hr {
+	margin: auto;
+	width: 750px;
+	color: #80808022;
+}
+
+footer {
+	text-align: center;
+	font-size: 75%;
+	padding: 2rem 0;
+}
+
+footer a {
+	color: var(--accent);
+	text-decoration: underline;
+}
+
+#home {
+	padding: 4rem 0;
+}
+
+#music {
+	border: 1px solid gray;
+	background-color: var(--blue);
+	width: min-content;
+	color: orange;
+	display: none;
+}
+
+#about {
+	padding: 2rem 1rem;
+	margin: 0 auto;
+	width: var(--width);
+}
+
+section {
+	padding: 2rem 0;
+	margin: 0 auto;
+	width: min(100%, var(--width));
+}
+
+#me {
+	margin: 0 auto;
+	padding: 2rem;
+	border: 1px solid #80808033;
+	border-radius: 4px;
+	width: min(100%, var(--width));
+}
+
+#tech {
+	text-align: center;
+}
+
+#tech ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	padding: 1rem 0;
+}
+
+#tech ul li {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+	border: 1px solid #80808022;
+	border-radius: 4px;
+	padding: 0.5rem;
+}
+
+#testimonials {
+	text-align: center;
+}
+
+#testimonials ul {
+	padding: 4rem 0;
+}
+
+#testimonials ul li {
+	padding: 0 8rem;
+	font-size: 105%;
+	text-align: left;
+	font-weight: 200;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+#testimonials ul li div {
+	font-weight: normal;
+	text-align: right;
+}
+
+#testimonials ul li div .designation {
+	font-size: 80%;
+	color: #999999;
+}
+
+#projects {
+	display: none;
+}
+
+#experience {
+	display: none;
+}
+
+#latest-blogs {
+	display: none;
+}
+
+#about {
+	padding: 2rem 1rem;
+	margin: 0 auto;
+	width: var(--width);
+}
+
+@media (max-width: 768px) {
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#logo {
+		font-size: 1.25rem;
+	}
+
+	#me {
+		text-align: center;
+	}
+
+	#location {
+		justify-content: center;
+	}
+}
