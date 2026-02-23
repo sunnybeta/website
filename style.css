@@ -27,9 +27,11 @@
 a {
 	text-decoration: none;
 	color: inherit;
+	opacity: 1.0;
+	transition: opacity 200ms ease-in-out;
 
 	&:hover {
-		text-decoration: underline;
+		opacity: 0.8;
 	}
 }
 
@@ -40,7 +42,7 @@ ul {
 body {
 	background-color: var(--background);
 	color: var(--black);
-	padding: 0rem 4rem;
+	padding: 0rem 1rem;
 	font-family: "Sora", sans-serif;
 }
 
@@ -77,6 +79,8 @@ nav {
 header {
 	display: flex;
 	justify-content: space-between;
+	width: min(100%, 1280px);
+	margin: 0 auto;
 	font-family: "Fira", sans-serif;
 }
 
@@ -93,7 +97,7 @@ header nav ul li a[aria-current="page"] {
 
 hr {
 	margin: auto;
-	width: 750px;
+	width: min(100%, 750px);
 	color: #80808022;
 }
 
@@ -106,10 +110,6 @@ footer {
 footer a {
 	color: var(--accent);
 	text-decoration: underline;
-}
-
-#home {
-	padding: 4rem 0;
 }
 
 #music {
@@ -168,17 +168,23 @@ section {
 }
 
 #testimonials ul {
-	padding: 4rem 0;
+	padding: 2rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #testimonials ul li {
-	padding: 0 8rem;
+	padding: 2rem 1rem;
+	border: 1px solid #80808022;
+	border-radius: 4px;
 	font-size: 105%;
 	text-align: left;
 	font-weight: 200;
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
+	max-width: 350px;
 }
 
 #testimonials ul li div {
@@ -209,7 +215,79 @@ section {
 	width: var(--width);
 }
 
-@media (max-width: 768px) {
+main {
+	padding: 1rem 0;
+}
+
+main #contact {
+	margin: 0 auto;
+	padding: 2rem;
+	border: 1px solid #80808033;
+	border-radius: 4px;
+	width: min(100%, var(--width));
+}
+
+#contact p {
+	color: gray;
+}
+
+#pgp {
+	display: none;
+	margin: 2rem auto;
+	padding: 2rem;
+	border: 1px solid #80808033;
+	border-radius: 4px;
+	width: min(100%, var(--width));
+}
+
+#contact .platforms {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 3rem 2rem 0 2rem;
+}
+
+#contact .platforms .platform {
+	width: 33%;
+}
+
+#contact .platforms .platform a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 200ms ease-in-out;
+	opacity: 1.0;
+
+	&:hover {
+		cursor: normal;
+		text-decoration: none;
+		opacity: 0.75;
+	}
+}
+
+#contact .platforms .platform a .icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon svg {
+	width: 42px;
+	height: 42px;
+}
+
+.name {
+	font-weight: bold;
+}
+
+.username {
+	color: gray;
+	font-size: 80%;
+}
+
+@media screen and (max-width: 768px) {
 	header {
 		flex-direction: column;
 		align-items: center;
@@ -225,5 +303,13 @@ section {
 
 	#location {
 		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 712px) {
+	#contact .platforms {
+		padding-left: 0px;
+		padding-right: 0px;
+		justify-content: space-around;
 	}
 }
